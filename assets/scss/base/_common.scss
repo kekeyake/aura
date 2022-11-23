@@ -1,0 +1,67 @@
+@charset "utf-8";
+// Reset img
+img {
+    max-width: 100%;
+    height: auto;
+}
+// CSS Reset by [class] - where() 선택자를 지원하는 프로젝트에서 아래 코드를 사용할 수 있음.
+[class] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+[class]::before,
+[class]::after { box-sizing: border-box; }
+[class]:where(ol, ul) { list-style: none; }
+[class]:where(button, fieldset, iframe, input, select, textarea) { border: 0; }
+[class]:where(button, dialog, input, mark, meter, progress) { background-color: transparent; }
+[class]:where(table) {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+[class]:where(button, input, meter, progress, select, textarea) {
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: 'notokr-regular', 'Noto Sans KR', 'Apple SD Gothic Neo', Verdana, 'Malgun Gothic', dotum, sans-serif;
+}
+[class]:where(a) {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// accessibility 대체 텍스트
+.a11y {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.c400 {
+    font-family: 'ClashGrotesk-Regular';
+}
+.c500 {
+    font-family: 'ClashGrotesk-Medium';
+}
+.s400 {
+    font-family: 'SpaceGrotesk-Regular';
+}
+.pc_br {
+    display: block;
+}
+.m_br {
+    display: none;
+}
+@media (max-width: 768px) {
+    .pc_br {
+        display: none;
+    }
+    .m_br {
+        display: block;
+    }
+}
