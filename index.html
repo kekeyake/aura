@@ -12,6 +12,7 @@
 <meta name="twitter:title" content="...">
 <meta name="twitter:description" content="...">
 <meta name="twitter:image" content="https://*.jpg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <link rel="preload" media="screen" href="assets/css/aura.css" as="style"/>
 <link rel="stylesheet" media="screen" href="assets/css/aura.css"/>
 </head>
@@ -37,24 +38,45 @@
         <section class="auraMain__top">
             <p class="c500 auraMain__tit">Blockchainization <br class="m_br">of Games</p>
             <p class="c500 auraMain__stit">AuraLink Platform</p>
-            <p class="c400 auraMain__txt">We support easy blockchainization of all games and help the transition to P2E through a simple API.</p>
+            <p class="c400 auraMain__txt">We support easy blockchainization of all games and help the transition to P2E through a simple API.</p>            
+        </section>
+        
+        <section class="auraMain__contTop">
             <section class="auraMain__btnWrap">
                 <a href="#a" class="s400 auraMain__downloadBtn"><span>Download</span></a>
                 <a href="#a" class="s400 auraMain__whitepaperBtn"><span>Whitepaper</span></a>
             </section>
-        </section>
-        
-        <section class="auraMain__cont">
-            <picture class="auraMain__contImg">
+            <!-- <picture class="auraMain__contImg">
                 <source media="(max-width: 769px)" srcset="assets/img/sample_img_m.png">
                 <img src="assets/img/sample_img_pc.png" alt="AuraLink Sample image" width="1337">
-            </picture>
+            </picture> -->
+            <div class="swiper mySwiper auraMain__slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/sample_img_pc_01.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/sample_img_pc_02.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/sample_img_pc_03.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/sample_img_pc_04.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="auraMain__cont">
+            <h2 class="auraMain__h2 c500">Let the Multi-Chain Games Begin</h2>
+            <img src="assets/img/cont_img_01.png" alt="">
+
+            <h2 class="auraMain__h2 c500">Blockchainization of Games</h2>
+            <p class="auraMain__stxt c400">One-stop support for blockchain of games. Decentralize the game through Auralink</p>
+            <img src="assets/img/cont_img_02.png" alt="">
+
+            <h2 class="auraMain__h2 c500">Connecting blockchain to you</h2>
+            <p class="auraMain__stxt c400">Auralink SDK is a solution to maximize the operation  proficiency & productivity of game <br class="pc_br">developers integrating blockchain technology into their projects.</p>
+            <img src="assets/img/cont_img_03.png" alt="">
         </section>
     </main>
     <footer class="auraFooter">
         <p class="auraFooter__logo"><img src="assets/img/logo.svg" alt="AuraLink" width="137"></p>
         <p class="auraFooter__copy c400">© 2022 AURALINK. All Rights Reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/ui.js"></script>
 </body>
 </html>
