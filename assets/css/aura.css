@@ -175,11 +175,17 @@ img {
 @media (max-width: 768px) {
   .auraMain {
     margin-top: 15.3356481481vw;
-    padding: 0 8.6805555556vw 3.7615740741vw;
+    padding: 0 0 3.7615740741vw;
   }
 }
 .auraMain__top {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .auraMain__top {
+    padding-left: 8.6805555556vw;
+    padding-right: 8.6805555556vw;
+  }
 }
 .auraMain__tit {
   background: -webkit-gradient(linear, left top, right top, from(#FF2424), to(#EDA0A0));
@@ -245,9 +251,9 @@ img {
 }
 @media (max-width: 768px) {
   .auraMain__contTop {
-    margin-top: 8.1018518519vw;
-    margin-bottom: 17.3611111111vw;
-    padding: 0;
+    padding-top: 8.1018518519vw;
+    padding-bottom: 0;
+    margin-bottom: 5.787037037vw;
   }
   .auraMain__contTop::before {
     display: none;
@@ -276,9 +282,11 @@ img {
 }
 @media (max-width: 768px) {
   .auraMain__cont {
-    margin-top: 8.1018518519vw;
+    padding-top: 8.1018518519vw;
+    padding-left: 8.6805555556vw;
+    padding-right: 8.6805555556vw;
+    padding-bottom: 2.8935185185vw;
     margin-bottom: 17.3611111111vw;
-    padding: 0;
   }
   .auraMain__cont::before {
     display: none;
@@ -288,17 +296,34 @@ img {
   display: block;
   margin: 100px auto 200px;
 }
+@media (max-width: 768px) {
+  .auraMain__cont img {
+    margin: 8.6805555556vw auto 11.5740740741vw;
+  }
+}
 .auraMain__h2 {
   font-size: 50px;
   color: #fff;
   letter-spacing: 0.02em;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .auraMain__h2 {
+    font-size: 5.2083333333vw;
+  }
+}
 .auraMain__stxt {
   font-size: 20px;
   color: #fff;
   margin-top: 30px;
   line-height: 33px;
+}
+@media (max-width: 768px) {
+  .auraMain__stxt {
+    font-size: 3.4722222222vw;
+    margin-top: 4.6296296296vw;
+    line-height: 4.6296296296vw;
+  }
 }
 .auraMain__contImg {
   display: block;
@@ -314,6 +339,19 @@ img {
 }
 .auraMain__slide .swiper-slide {
   width: 995px;
+  margin: 0 15px;
+}
+@media (max-width: 768px) {
+  .auraMain__slide {
+    margin: 6.3657407407vw auto 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .auraMain__slide .swiper-slide {
+    width: 80%;
+    margin: 0 5px;
+  }
 }
 .auraMain__btnWrap {
   display: -webkit-box;
@@ -351,7 +389,6 @@ img {
 }
 @media (max-width: 768px) {
   .auraMain__btnWrap {
-    margin-top: 6.9444444444vw;
     gap: 3.4722222222vw;
   }
   .auraMain__btnWrap [class$=Btn] {

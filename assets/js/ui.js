@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     if (document.querySelector(".mySwiper")){
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 'auto',
-            spaceBetween: 30,
             centeredSlides: true,
             loop: true,
             autoplay: {
